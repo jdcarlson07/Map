@@ -1,17 +1,9 @@
-#include "iostream"
-#include "Room.cpp"
-#include "Door.cpp"
-#include "Student.cpp"
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
-    Door* firstDoor = new Door("Living Room");
-    Student* josh = new Student(firstDoor);
-    Room* livingRoom = firstDoor->getRoom();
-    Door* secondDoor = new Door("Kitchen");
-    livingRoom->addDoor(secondDoor);
-    Room* kitchen = livingRoom->getDoor(2)->getRoom();
-    Door* thrdDoor = new Door("Dining Room");
-    kitchen->addDoor(thrdDoor);
-    josh->travel();
+    cout << "hello world\n";
+    return 0;
 }

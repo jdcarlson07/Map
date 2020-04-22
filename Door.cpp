@@ -1,33 +1,9 @@
-#ifndef Door_cpp
-#define Door_cpp
+#include "Door.hpp"
 
-#include "iostream"
-#include "Room.cpp"
-using namespace std;
-
-class Door
+Door::Door(string directionToRoomA, Room* roomA, string directionToRoomB, Room* roomB)
 {
-    public:
-    Door(string nme)
-    {
-        this->room = new Room(this, nme);
-        this->name = "Door to " + nme;
-    }
-    string displayRoom()
-    {
-        return this->room->getName();
-    }
-
-    string getName()
-    {
-        return this->name;
-    }
-    Room* getRoom()
-    {
-        return this->room;
-    }
-    private:
-    Room* room;
-    string name;
-};
-#endif
+    this->directionToRoomA = directionToRoomA;
+    this->directionToRoomB = directionToRoomB;
+    this->roomA = roomA;
+    this->roomB = roomB;
+}
