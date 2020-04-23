@@ -2,15 +2,17 @@
 #define LinkedListOfStudents_hpp
 #include "Student.hpp"
 #include "StudentNode.hpp"
+#include <iostream>
 
 using namespace std;
 class LinkedListOfStudents
 {
     private: 
         StudentNode* head;
-        int count;
+        
 
     public:
+        int count;
         LinkedListOfStudents();
         void addFront(Student* s);
         Student* getAtIndex(int index);

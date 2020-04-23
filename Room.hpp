@@ -17,6 +17,7 @@ class Room
     
     public:
         Room(string title);
+        void addDoor(Door* door);
 
 };
 #endif

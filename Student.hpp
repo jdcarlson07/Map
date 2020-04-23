@@ -9,11 +9,13 @@ class Room;
 class Student
 {
     private:
-        string name;
+        
         Room* currentRoom;
 
     public:
+        string name;
         Student(string name);
+        void setRoom(Room* room);
 };
 
 #endif
